@@ -10,6 +10,7 @@ on:
       - master
       - main
       - release-*
+      - ops-534/actions/checkout
 
 jobs:
   build:
@@ -17,7 +18,7 @@ jobs:
     if: ${{ github.event.label.name == 'sonar_check' || github.event_name == 'push' }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
