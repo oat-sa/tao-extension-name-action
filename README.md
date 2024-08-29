@@ -1,4 +1,4 @@
-# tao-extension-ci-action
+## tao-extension-ci-action
 GitHub action executing a CI pipeline for TAO extensions
 
 This action produces a TAO Extension name as an output.
